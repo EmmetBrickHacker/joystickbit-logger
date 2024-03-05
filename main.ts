@@ -37,6 +37,9 @@ joystickbit.onButtonEvent(joystickbit.JoystickBitPin.P15, joystickbit.ButtonType
     datalogger.createCV("status", "released")
     )
 })
+input.onButtonPressed(Button.AB, function () {
+    datalogger.deleteLog(datalogger.DeleteType.Fast)
+})
 joystickbit.onButtonEvent(joystickbit.JoystickBitPin.P14, joystickbit.ButtonType.up, function () {
     datalogger.log(
     datalogger.createCV("button", "E"),
@@ -57,7 +60,6 @@ joystickbit.onButtonEvent(joystickbit.JoystickBitPin.P12, joystickbit.ButtonType
 })
 let joystick_position = 0
 joystick_position = 0
-datalogger.deleteLog(datalogger.DeleteType.Fast)
 let inicialised = 0
 datalogger.setColumnTitles(
 "button",
