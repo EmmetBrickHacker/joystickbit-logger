@@ -69,6 +69,3 @@ datalogger.includeTimestamp(FlashLogTimeStampFormat.Seconds)
 joystickbit.initJoystickBit()
 basic.showIcon(IconNames.Heart)
 inicialised = 1
-loops.everyInterval(500, function () {
-	
-})
